@@ -247,17 +247,22 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
+            'text'        => 'User',
+            'url'         => 'users',
             'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
             'label_color' => 'success',
         ],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'text'        => 'Role',
+            'url'         => 'roles',
+            'icon'        => 'far fa-fw fa-file',
         ],
+        [
+            'text'        => 'Product',
+            'url'         => 'products',
+            'icon'        => 'far fa-fw fa-file',
+        ],
+       
     ],
 
     /*
