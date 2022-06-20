@@ -67,9 +67,11 @@ class ProductSubCategoryController extends Controller
      * @param  \App\Models\ProductSubCategory  $productSubCategory
      * @return \Illuminate\Http\Response
      */
-    public function edit(ProductSubCategory $productSubCategory)
+    public function edit($id)
     {
-        //
+        $editsubcategory = ProductSubCategory::find($id);
+        $category = ProductCategory::all();
+        return view("products.productSubCategory.edit",compact('editsubcategory','category'));
     }
 
     /**
@@ -79,9 +81,16 @@ class ProductSubCategoryController extends Controller
      * @param  \App\Models\ProductSubCategory  $productSubCategory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ProductSubCategory $productSubCategory)
+    public function update(Request $request, $id)
     {
-        //
+        $category = ProductSubCategory::find($id);
+        $category->product_categories_id = $request->product_categories_id;
+        $category->subcategory_name = $request->subcategory_name;
+        $category->slug = $request->subcategory_name;
+        $category->updated_by = Auth::user()->id;
+        $category->created_by = Auth::user()->id;
+        $category->save();
+        return redirect('/productSubCategory');
     }
 
     /**
@@ -90,8 +99,9 @@ class ProductSubCategoryController extends Controller
      * @param  \App\Models\ProductSubCategory  $productSubCategory
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ProductSubCategory $productSubCategory)
+    public function destroy($id)
     {
-        //
+       ProductSubCategory::find($id)->delete();
+       return redirect('/productSubCategory');
     }
 }

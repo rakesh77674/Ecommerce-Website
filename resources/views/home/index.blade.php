@@ -13,7 +13,7 @@
                 <div class="left-content">
                     <div class="thumb">
                         <div class="inner-content">
-                            <h4>We Are Hexashop</h4>
+                            <h4>We Are CleckDIced</h4>
                             <span>Awesome, clean &amp; </span>
                             <div class="main-border-button">
                                 <a href="#">Purchase Now!</a>
@@ -664,7 +664,7 @@
                     </div>
                     <ul>
                         <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
-                        <li><a href="#">hexashop@company.com</a></li>
+                        <li><a href="#">rockychaudhary2222@gmail.com</a></li>
                         <li><a href="#">010-020-0340</a></li>
                     </ul>
                 </div>
@@ -697,9 +697,7 @@
             </div>
             <div class="col-lg-12">
                 <div class="under-footer">
-                    <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved. 
-                    
-                    <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
+                    <p>Copyright © 2022 Rakesh Chaudhary.
                     <ul>
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>

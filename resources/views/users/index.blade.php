@@ -20,7 +20,7 @@
 
 
 <table class="table table-bordered">
- <tr>
+ <tr class = "bg-primary">
    <th>No</th>
    <th>Name</th>
    <th>Email</th>

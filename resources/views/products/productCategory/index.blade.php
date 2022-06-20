@@ -16,16 +16,18 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
     @foreach($productCategory as $productcategories)  
+    <tr>
+    
       <td>{{$productcategories->category_name}}</td>
       <td>{{$productcategories->status}}</td>
       <td>
       <button type="submit" class="btn btn-warning" style ="background: red; color:white; ">Delete</button>
        <button type="submit" class="btn btn-primary" style = "width: 23%; padding: 2px; margin: 2px;height: 35px;">Edit</button>
       </td>
-      @endforeach
+    
     </tr>
+    @endforeach
   </tbody>
 </table>
   @endsection

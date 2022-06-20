@@ -258,6 +258,11 @@ return [
             'icon'        => 'far fa-fw fa-file',
         ],
         [
+            'text'        => 'product',
+            'url'         => '/product',
+            'icon'        => 'far fa-fw fa-file',
+        ],
+        [
             'text'        => 'ProductCategory',
             'url'         => '/productCategory',
             'icon'        => 'far fa-fw fa-file',

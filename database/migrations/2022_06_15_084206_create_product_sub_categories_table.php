@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('product_sub_categories', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->foreignid('product_categories_id');
             $table->string('subcategory_name');
             $table->string('slug');

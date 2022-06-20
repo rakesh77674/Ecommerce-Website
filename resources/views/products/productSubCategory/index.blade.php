@@ -16,17 +16,23 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
     @foreach($productSubCategory as $productSubCategories)
+    <tr>
     <td>{{$productSubCategories->product_categories_id}}</td>
       <td>{{$productSubCategories->subcategory_name}}</td>
       <td>{{$productSubCategories->status}}</td>
       <td>
+      <form method = "post" action = "{{route('destroy.subcategory',$productSubCategories->id)}}">
+      @csrf
+      @method('delete')
       <button type="submit" class="btn btn-warning" style ="background: red; color:white; ">Delete</button>
-       <button type="submit" class="btn btn-primary" style = "width: 23%; padding: 2px; margin: 2px;height: 35px;">Edit</button>
+      </form>
+       <form method = "get" action = "{{route('edit.subcategory', $productSubCategories->id)}}">
+      <button type="submit" class="btn btn-primary" style = "width: 23%; padding: 2px; margin: 2px;height: 35px;">Edit</button>
+      </form>
       </td>
-      @endforeach
     </tr>
+    @endforeach
   </tbody>
 </table>
   @endsection
